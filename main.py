@@ -126,7 +126,7 @@ if __name__ == "__main__":
 
     load_images_to_database()
 
-    getImage = input('Enter path to image: ')
-    prepare_image_to_test(getImage)
-    display_image(load_image(getImage))
+    getImage = input('Enter name of image from test folder: ')
+    prepare_image_to_test("Test/" + getImage)
+    display_image(load_image("Test/" + getImage))
     # display_image(load_image(match))
